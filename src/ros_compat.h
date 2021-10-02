@@ -39,6 +39,9 @@
 #include <vision_msgs/Classification2D.h>
 #include <vision_msgs/Detection2DArray.h>
 #include <vision_msgs/VisionInfo.h>
+#include <camera_info_manager/camera_info_manager.h>
+#include <sensor_msgs/CameraInfo.h>
+#include <sensor_msgs/SetCameraInfo.h>
 
 #define ROS_CREATE_NODE(name)				\
 		ros::init(argc, argv, name); 		\

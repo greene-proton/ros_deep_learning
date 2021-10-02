@@ -20,13 +20,14 @@ link_directories(/usr/lib/aarch64-linux-gnu/tegra)
 
 if( catkin_FOUND )
 	message("detected ROS1 (catkin_make)")
-	
+
 	configure_file(${CMAKE_CURRENT_SOURCE_DIR}/package.ros1.xml ${CMAKE_CURRENT_SOURCE_DIR}/package.xml COPYONLY)
 
 	find_package(catkin REQUIRED COMPONENTS
 		image_transport
 		roscpp
 		sensor_msgs
+		camera_info_manager
 		vision_msgs
 		std_msgs
 	)
